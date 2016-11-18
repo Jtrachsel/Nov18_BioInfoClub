@@ -168,6 +168,7 @@ This should bring up a script template very similar to what Tim gave us the othe
 module load python_3
 module load muscle
 module load openblas
+module load fasttreemp
 
 python3 butcoverage.py finalbuts.fasta >> log.txt
 
