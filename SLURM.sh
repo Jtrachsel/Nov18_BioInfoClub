@@ -17,6 +17,7 @@ the node name
 module load python_3
 module load muscle
 module load openblas
+module load fasttreemp
 
 python3 butcoverage.py finalbuts.fasta >> log.txt
 
