@@ -26,6 +26,19 @@ The goals for today are not to teach you the details of how to code in python or
 4) Pull the output of this script back to your own computer
 5) Use RStudio to generate some figures
 
+***
+
+Special info for Windows users:  
+
+I highly reccommend you download Mobaxterm.  It is a unix shell environment that allows windows users to easily interface with SciNet (or other servers).  If you have mobaxterm working properly everything in this tutorial should work for you.
+
+If you only have PuTTY, you will also need some other Windows scp client such as Winscp or pscp (putty scp)
+PuTTY and pscp are available here: [PuTTY download page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+
+
+***
+
+
 
 ### Requirements
 Everyone should be able to complete the python portion of this session, but if you want to follow along and run the R code with the group, there are a few things you will need to install:  
@@ -126,7 +139,7 @@ Once you have loaded the required module, and cloned the repository to your own 
 Ok, let's make a bash script to submit our python script to SLURM.  
 Thanks to Tim we have a nice template already.  
 
-In the folder we downloaded from github, there should be a file called 'SLURM.bash'.  
+In the folder we downloaded from github, there should be a file called 'SLURM.sh'.  
 We need to open this file and make some changes
 ```{r, engine='bash', eval=FALSE}
 nano SLURM.sh
@@ -247,8 +260,9 @@ pwd
 This will tell you exactly where your files are in SciNet.  
 
 REMEMBER THIS PATH.  
-Open a new terminal.  
+Open a new terminal, or exit SciNet.  
 Enter the following command:  
+
 ```{r, engine='bash', eval=FALSE}
 scp -r user.name@scinet-login.bioteam.net:/project/fsepru/YOURFOLDER/Nov18_BioInfoClub ./from_scinet
 # be sure you modify this command to have your username as well as the name of the folder you are working from on SciNet
