@@ -580,7 +580,7 @@ combined_df.to_csv("finalbutcoverage.csv", sep="\t")
 
 print("building tree.....")
 
-fasttree_cline = FastTreeCommandline("fasttreeMP", input=protein_align_handle, out="Tree1.nwk")
+fasttree_cline = FastTreeCommandline("FastTreeMP", input=protein_align_handle, out="Tree1.nwk")
 
 print('using FastTree with the command: {}'.format(fasttree_cline))
 fasttree_cline()
